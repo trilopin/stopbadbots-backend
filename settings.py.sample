@@ -1,0 +1,19 @@
+import logging
+import os
+
+ROOT = os.path.abspath('.')
+settings = {
+    'celery': {
+        'broker_url': "redis://127.0.0.1:6379/0",
+        'backend_url': "redis://127.0.0.1:6379/1"
+    },
+    'data_dir': ROOT + '/tmp/',
+    'log': {
+        'file': ROOT + '/log/master.log',
+        'level': logging.INFO
+    },
+    'aerospike': {
+        'hosts': [('127.0.0.1', 3000)],
+        'namespace': 'test'
+    }
+}
