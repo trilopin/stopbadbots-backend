@@ -2,4 +2,6 @@ data/
 *.pyc
 __pycache__
 env*/
+log/
+tmp/
 settings.py
