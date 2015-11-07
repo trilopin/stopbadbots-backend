@@ -8,12 +8,12 @@ client = aerospike.client(config).connect()
 
 sets = [
     ['stopbadbots', 'example'],
-    ['stopbadbots', 'articles'],
-    ['stopbadbots', 'user'],
-    ['stopbadbots', 'project'],
+    ['stopbadbots', 'feature'],
+#    ['stopbadbots', 'user'],
+#    ['stopbadbots', 'project'],
     ['stopbadbots', 'event'],
     ['stopbadbots', 'alert'],
-    ['stopbadbots', 'auth'],
+#    ['stopbadbots', 'auth'],
 ]
 
 def remove_record((key, metadata, record)):

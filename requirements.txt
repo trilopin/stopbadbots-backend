@@ -1,6 +1,6 @@
 Cython==0.23.2
 PyYAML==3.11
-aerospike==1.0.52
+# aerospike==1.0.55 --install-option="--lua-system-path=./env/local/lua/"
 celery==3.1.18
 falcon==0.3.0
 funcsigs==0.4

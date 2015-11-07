@@ -5,8 +5,8 @@ WIP - DO NOT USE (YET)
 
 ### development
 ```
-gunicorn api:app --reload
-celery -A tasks worker -l info  -f ../log/celery.log
+gunicorn api:app --reload --log-level debug
+celery -A tasks worker -l debug  
 ```
 
 ### production

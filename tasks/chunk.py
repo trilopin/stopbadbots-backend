@@ -8,7 +8,7 @@ from tasks.generictask import GenericTask
 
 class Chunk(GenericTask):
 
-    chunk_size = 100000
+    CHUNK_SIZE = 50000
 
     allowed_kwargs = [
         'file',
@@ -39,7 +39,7 @@ class Chunk(GenericTask):
         part = 1
         tasks = []
         while True:
-            line_iter = islice(data_in, self.chunk_size)
+            line_iter = islice(data_in, self.CHUNK_SIZE)
 
             try:
                 first_line = next(line_iter)
