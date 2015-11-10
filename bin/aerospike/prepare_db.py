@@ -16,7 +16,7 @@ try:
     print("Creating indexes..."),
     session.aerospike.index_string_create(settings['aerospike']['namespace'], 'user', 'name', 'idx_name')
     session.aerospike.index_string_create(settings['aerospike']['namespace'], 'user', 'private_token', 'idx_private_token')
-    session.aerospike.index_string_create(settings['aerospike']['namespace'], 'user', 'token', 'idx_auth_token')
+    session.aerospike.index_string_create(settings['aerospike']['namespace'], 'auth', 'token', 'idx_token')
     session.aerospike.index_string_create(settings['aerospike']['namespace'], 'project', 'full_name', 'idx_full_name')
     session.aerospike.index_string_create(settings['aerospike']['namespace'], 'project', 'user', 'idx_projectuser')
     session.aerospike.index_string_create(settings['aerospike']['namespace'], 'example', 'p_interval', 'idx_interval')
